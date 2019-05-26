@@ -12,7 +12,7 @@ stopButton.addEventListener('click', stopAll);
 })();
 
 async function getSounds() {
-	const response = await fetch('./sounds.json');
+	const response = await fetch('sounds.json');
 	const json = await response.json();
 	return json;
 }
@@ -32,7 +32,7 @@ function addSoundToPage(sound, index) {
 	soundDiv.appendChild(soundTitle);
 
 	const key = document.createElement('img');
-	key.setAttribute('src', `keys/${keyCodes[index]}.png`)
+	key.setAttribute('src', `img/${keyCodes[index]}.png`)
 	/* key.setAttribute('style', 'display: none') */
 	soundDiv.appendChild(key);
 
