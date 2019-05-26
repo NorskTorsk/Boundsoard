@@ -27,14 +27,8 @@ function addSoundToPage(sound, index) {
 	soundDiv.className = 'sound';
 
 	const soundTitle = document.createElement('h2');
-	/* soundTitle.textContent = sound.title; */
 	soundTitle.textContent = sound.src;
 	soundDiv.appendChild(soundTitle);
-
-	const key = document.createElement('img');
-	key.setAttribute('src', `img/${keyCodes[index]}.png`)
-	/* key.setAttribute('style', 'display: none') */
-	soundDiv.appendChild(key);
 
 		const soundText = document.createElement('span');
 		soundText.textContent = `${String.fromCharCode(keyCodes[index])}`;
@@ -44,7 +38,7 @@ function addSoundToPage(sound, index) {
 	const player = document.createElement('audio');
 	player.setAttribute('src', `sounds/${sound.src}`)
 	soundDiv.appendChild(player);
-	players.push({ player, soundDiv, key });
+	players.push({ player, soundDiv });
 
 	soundDiv.addEventListener('mousedown', () => {
 		soundPress(soundDiv, player);
@@ -71,7 +65,7 @@ function listenKeyPress() {
 		const playerAndDiv = players[playerIndex];
 		if (playerAndDiv && !playerAndDiv.keydown) {
 			playerAndDiv.keydown = true;
-			playerAndDiv.key.style.transform = 'scaleY(0.75)';
+			//playerAndDiv.key.style.transform = 'scaleY(0.75)';
 			soundPress(playerAndDiv.soundDiv, playerAndDiv.player);
 		}
 	});
@@ -82,7 +76,7 @@ function listenKeyPress() {
 		if (playerAndDiv) {
 			playerAndDiv.soundDiv.style.background = '';
 			playerAndDiv.keydown = false;
-			playerAndDiv.key.style.transform = '';
+			//playerAndDiv.key.style.transform = '';
 		}
 	});
 }
