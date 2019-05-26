@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+  background: #007EA7;
+  color: white;
+  text-align: center;
+  font-size: 1vw;
+}
+
+h1 {
+  font-size: 3vw;
+}
+
+h2 {
+  font-size: 1em;
+  margin: 0px 0px 10px 0px;
+}
+
+.container {
+  margin: 3em;
+}
+
+#sounds {
+  /* background: #00171F; */
+  /* margin: 1em; */
+}
+
+.sound {
+  text-align: center;
+  border: 2px solid rgb(0, 28, 37);
+  /* border-radius: 20px; */
+  background: #003459;
+  margin: 5px;
+  display: inline-block;
+  width: 20%;
+  padding: 1em;
+}
+
+.sound img {
+  /* display: none;*/
+  width: 0px;
+  height: 0px;
+}
+
+.KeyCodeText {
+  text-align: center;
+  display: inline-block;
+  font-size: 4em;
+}
+
+#stopButton {
+  width: 50%;
+  background: rgb(0, 40, 53);
+  padding: 1em;
+}
+
+#stopButton h2 {
+  font-size: 1.4em;
+}
+
+#stopButton img {
+  width: 100%;
+  height: auto;
+}
