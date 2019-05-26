@@ -1,5 +1,4 @@
-[
-{ "title": "Applause", "src": "Wiesselboing.mp3" },
+[{ "title": "Applause", "src": "Wiesselboing.mp3" },
 { "title": "Ba Dum Tiss", "src": "crackvrål.mp3" },
 { "title": "Booo", "src": "kriminell.mp3" },
 { "title": "Crowd Cheer", "src": "pling.mp3" },
@@ -8,7 +7,6 @@
 { "title": "Guitar Pinch Harmonic", "src": "MGP_il radio journale.mp3" },
 { "title": "Sad Trombone", "src": "MGP_multi-talented.mp3" },
 { "title": "Snare Roll", "src": "MGP_Kappoom.mp3" },
-{ "title": "Tada", "src": "tada.mp3" },
-{ "title": "KUK!", "src": "KUK.mp3" },
-{ "title": "AIRHORN", "src": "AIRHORN.mp3" }
-]
+{ "title": "AK", "src": "AK.mp3" },
+{ "title": "AIRHORN", "src": "AIRHORN.mp3" },
+{ "title": "AIRHORN-ts", "src": "AIRHORN-ts.mp3" }]
