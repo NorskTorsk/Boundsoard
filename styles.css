@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1em;
+	font-size: 0.9em;
 	margin: 0px 0px 10px 0px;
 }
 
@@ -25,14 +25,20 @@ h2 {
 
 .sound {
 	text-align: center;
-	border: 2px solid rgb(0, 28, 37);
+	border: 1px solid rgb(0, 28, 37);
 	/* border-radius: 20px; */
 	border-radius: 0.4em;
 	background: #003459;
-	margin: 5px;
+	margin: 1px;
 	display: inline-block;
-	width: 21%;
+	width: 8%;
 	padding: 1em;
+}
+
+.sound h2 {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .KeyCodeText {
